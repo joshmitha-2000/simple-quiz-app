@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+
+    <style>
+       body {
+    font-family: Arial, sans-serif;
+    background-image: url(https://img.freepik.com/premium-photo/abstract-background-images-wallpaper-ai-generated_643360-43333.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    font-size: 1rem;
+  }
+  
+  #quiz-container {
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 150px;
+    padding: 20px;
+    background-color:white;
+    border-radius: 5px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: black;
+  }
+  
+  #question {
+    margin-bottom: 20px;
+  }
+  
+  #options {
+    display: flex ;
+    gap: 10px;
+    flex-direction: column;
+    width: 100%;
+
+    
+  }
+  
+  button{
+    display: block;
+    margin: 0 auto;
+    padding-left: 40%;
+    padding-right: 40%;
+    background-color:seashell;
+    color: black;
+    border: 2px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 1rem;
+  }
+  
+  button:hover {
+    background-color: gray;
+  }
+  .selected{
+    background-color: black;
+    color: white;
+  }
+  #previous-btn{
+    margin-top: 5%;
+    background-color: rgba(128, 128, 128, 0.722);
+    border: none;
+    padding: 2%;
+    font-size: 1rem;
+    margin-left: 10%;
+    position: relative;
+    top: 40px;
+  }
+  #next-btn{
+    background-color: rgba(128, 128, 128, 0.722);
+    border: none;
+    padding: 2%;
+    font-size: 1rem;
+    margin-left: 75%;
+    
+  }
+  #previous-btn:hover{
+    background-color: green;
+    color: white;
+  }
+  #next-btn:hover{
+    background-color: green;
+    color: white;
+  }
+    </style>
+</head>
+<body>
+    <div id="quiz-container">
+        <h2 id="question"></h2>
+        <div id="options"></div>
+        <button onclick="previous()" id="previous-btn">Previous</button>
+        <button onclick="next()" id="next-btn">Next --></button>
+    </div>
+    
+    <script src="index2.js"></script>
+</body>
+</html>
